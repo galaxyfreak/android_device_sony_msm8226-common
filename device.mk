@@ -197,6 +197,9 @@ PRODUCT_PACKAGES += \
     librs_jni \
     com.android.future.usb.accessory
 
+PRODUCT_PACKAGES += \
+    libemoji
+
 # Filesystem management tools
 PRODUCT_PACKAGES += \
     e2fsck
