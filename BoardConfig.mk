@@ -100,7 +100,9 @@ TARGET_SYSTEM_PROP := device/sony/msm8226-common/system.prop
 EXTENDED_FONT_FOOTPRINT := true
 
 # Enable dex-preoptimization to speed up first boot sequence
-WITH_DEXPREOPT := true
+ifeq ($(HOST_OS),linux)
+    WITH_DEXPREOPT ?= true
+endif
 
 include device/sony/common/BoardConfigCommon.mk
 
