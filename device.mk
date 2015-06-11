@@ -211,10 +211,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     extract_elf_ramdisk
 
-# Platform specific tags
-#
-PRODUCT_TAGS += dalvik.gc.type-precise
-
 # Platform specific properties
 #
 PRODUCT_PROPERTY_OVERRIDES += \
