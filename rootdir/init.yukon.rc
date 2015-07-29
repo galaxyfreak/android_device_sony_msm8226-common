@@ -159,7 +159,6 @@ on early-boot
     setrlimit 8 67108864 67108864
 
 on boot
-
     # read ahead buffer
     write /sys/block/mmcblk0/queue/read_ahead_kb 512
     write /sys/block/mmcblk1/queue/read_ahead_kb 512
@@ -308,6 +307,13 @@ on boot
     # CM LiveDisplay
     chown system system /sys/devices/virtual/graphics/fb0/rgb
     chmod 0660 /sys/devices/virtual/graphics/fb0/rgb
+
+#SONY misc
+service tad_static /system/bin/tad_static /dev/block/platform/msm_sdcc.1/by-name/TA 0,16
+    user root
+    group root
+    socket tad stream 0660 system system
+    class core
 
 #SONY misc
 service ta_qmi_service /system/bin/ta_qmi_service
