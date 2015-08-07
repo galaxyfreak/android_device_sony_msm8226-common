@@ -208,9 +208,9 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     e2fsck
 
-# Extract recovery ramdisks
+# BoringSSL hacks
 PRODUCT_PACKAGES += \
-    extract_elf_ramdisk
+    libboringssl-fixer-upper
 
 # Platform specific properties
 #
