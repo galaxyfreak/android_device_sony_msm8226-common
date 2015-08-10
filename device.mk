@@ -210,7 +210,7 @@ PRODUCT_PACKAGES += \
 
 # BoringSSL hacks
 PRODUCT_PACKAGES += \
-    libboringssl-fixer-upper
+    libboringssl-compat
 
 # Platform specific properties
 #
