@@ -1,6 +1,6 @@
 [
   {
-    "repository": "android_kernel_sony_msm8974",
+    "repository": "kernel",
     "target_path": "kernel/sony/msm8974"
   },
   {
