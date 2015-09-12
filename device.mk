@@ -178,6 +178,7 @@ PRODUCT_PACKAGES += \
     wpa_supplicant.conf
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 PRODUCT_PROPERTY_OVERRIDES += \
     wlan.driver.ath=0
 
@@ -186,6 +187,15 @@ PRODUCT_COPY_FILES += \
 
 #Misc
 =======
+=======
+# CAMERA
+PRODUCT_PACKAGES += \
+    libmmcamera_interface \
+    libmmjpeg_interface \
+    libqomx_core \
+    camera.msm8226
+
+>>>>>>> f679d48... add camera HAL
 # Misc
 >>>>>>> cff365a... yukon: Sources cleanup
 PRODUCT_PACKAGES += \
