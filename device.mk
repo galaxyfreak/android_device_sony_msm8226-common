@@ -98,7 +98,6 @@ PRODUCT_PACKAGES += \
     libqcomvoiceprocessingdescriptors \
     libqcompostprocbundle
 
-<<<<<<< HEAD
 # FM radio
 PRODUCT_PACKAGES += \
     qcom.fmradio \
@@ -106,10 +105,7 @@ PRODUCT_PACKAGES += \
     FM2 \
     FMRecord
 
-#GFX
-=======
 # GFX
->>>>>>> cff365a... yukon: Sources cleanup
 PRODUCT_PACKAGES += \
     gralloc.msm8226 \
     hwcomposer.msm8226 \
@@ -150,15 +146,11 @@ PRODUCT_PACKAGES += \
     Tag \
     nfc_nci.msm8226
 
-<<<<<<< HEAD
 # Power
 PRODUCT_PACKAGES += \
     power.yukon
 
-#GPS
-=======
 # GPS
->>>>>>> cff365a... yukon: Sources cleanup
 PRODUCT_PACKAGES += \
     libloc_api_v02 \
     libloc_adapter \
@@ -177,17 +169,12 @@ PRODUCT_PACKAGES += \
     wpa_supplicant \
     wpa_supplicant.conf
 
-<<<<<<< HEAD
-<<<<<<< HEAD
 PRODUCT_PROPERTY_OVERRIDES += \
     wlan.driver.ath=0
 
 PRODUCT_COPY_FILES += \
     $(SONY_ROOT)/system/etc/hostapd/hostapd_default.conf:system/etc/hostapd/hostapd_default.conf
 
-#Misc
-=======
-=======
 # CAMERA
 PRODUCT_PACKAGES += \
     libmmcamera_interface \
@@ -195,9 +182,7 @@ PRODUCT_PACKAGES += \
     libqomx_core \
     camera.msm8226
 
->>>>>>> f679d48... add camera HAL
 # Misc
->>>>>>> cff365a... yukon: Sources cleanup
 PRODUCT_PACKAGES += \
     libmiscta \
     libta \
@@ -234,16 +219,11 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     libboringssl-compat
 
-<<<<<<< HEAD
-# Platform specific properties
-#
-=======
 # APN list
 PRODUCT_COPY_FILES += \
     device/sample/etc/apns-full-conf.xml:system/etc/apns-conf.xml
 
 # Bluetooth
->>>>>>> cff365a... yukon: Sources cleanup
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.qualcomm.bt.hci_transport=smd
 
