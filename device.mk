@@ -146,10 +146,6 @@ PRODUCT_PACKAGES += \
     Tag \
     nfc_nci.msm8226
 
-# Power
-PRODUCT_PACKAGES += \
-    power.yukon
-
 # GPS
 PRODUCT_PACKAGES += \
     libloc_api_v02 \
@@ -242,8 +238,4 @@ $(call add-product-dex-preopt-module-config,services,--compiler-filter=speed)
 PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
     persist.sys.usb.config=mtp \
     persist.data.qmi.adb_logmask=0
-
-# QC Perf
-PRODUCT_PROPERTY_OVERRIDES += \
-    ro.vendor.extension_library=/vendor/lib/libqc-opt.so
 
